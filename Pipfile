@@ -8,6 +8,8 @@ f = "black . --line-length 160"
 l = "flake8 . --max-line-length 160 --ignore E731 --exclude .venv"
 t = "mypy . --strict --check-untyped-defs --exclude .venv"
 
+download = "python src/tasks/download.py"
+
 [packages]
 
 [dev-packages]
