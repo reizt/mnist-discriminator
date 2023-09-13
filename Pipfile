@@ -4,16 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [scripts]
-format = "black . --line-length 160"
-lint = "flake8 . --max-line-length 160 --ignore E731 --exclude .venv"
-typecheck = "mypy . --strict"
+f = "black . --line-length 160"
+l = "flake8 . --max-line-length 160 --ignore E731 --exclude .venv"
+t = "mypy . --strict --check-untyped-defs --exclude .venv"
 
 [packages]
 
 [dev-packages]
-black = "23.3.0"
-flake8 = "6.0.0"
-mypy = "1.5.0"
+black = "==23.3.0"
+flake8 = "==6.0.0"
+mypy = "==1.5.0"
 
 [requires]
 python_version = "3.11"

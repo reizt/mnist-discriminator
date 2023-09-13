@@ -1,4 +1,9 @@
 {
+  "github.copilot.enable": {
+    "*": true,
+    "python": false
+  },
+
   // Editor
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
@@ -26,6 +31,7 @@
   "mypy.enabled": false,
   "mypy.dmypyExecutable": "{$workspaceFolder}/.venv/bin/dmypy",
   "mypy.runUsingActiveInterpreter": true,
+  "mypy.configFile": "{$workspaceFolder}/mypy.ini",
 
   "python.defaultInterpreterPath": ".venv/bin/python",
   "python.linting.mypyEnabled": true,
