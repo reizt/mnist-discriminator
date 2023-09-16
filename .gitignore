@@ -2,3 +2,5 @@
 /tmp
 /.env
 /src/data
+/.mypy_cache
+/.pytest_cache

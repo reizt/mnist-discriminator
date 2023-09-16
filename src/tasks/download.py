@@ -27,7 +27,7 @@ async def download_mnist() -> None:
     await asyncio.gather(*[download(f) for f in download_files])
 
 
-if __name__ == "__main__":
+if __name__ == "__mainput__":
     loop = asyncio.get_event_loop()
     loop.run_until_complete(download_mnist())
     loop.close()
