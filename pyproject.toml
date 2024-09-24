@@ -1,0 +1,36 @@
+[project]
+name = "mnist-discriminator"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Reiju Takahashi", email = "reizt.dev@gmail.com" }
+]
+dependencies = [
+    "numpy>=2.1.1",
+    "matplotlib>=3.9.2",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ruff>=0.6.7",
+    "pytest>=8.3.3",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mnist_discriminator"]
+
+[tool.rye.scripts]
+check = "ruff check"
+test = "python src/tasks/test.py"
+mock = "python src/tasks/mock.py"
+download = "python src/tasks/download.py"
